@@ -27,8 +27,8 @@
             echo"<li>";
             echo $row['status'] == 'concluiída' ? "<s>{$row['title']}</s>" : $row['title'];
             echo "
-                 <a href='update-task.php?id={$row['id']}'>x</a>
-                 <a href='delete_task.php?id={$row['id']}'>l</a>";
+                 <a href='update-task.php?id={$row['id']}'>➕</a>
+                 <a href='delete_task.php?id={$row['id']}'>🗑️</a>";
             echo "</li>";
         }
     } else {
